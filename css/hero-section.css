@@ -1,0 +1,189 @@
+@font-face {
+  font-family: a-space-italic;
+  src: url(../public/fonts/a-space.italic.otf);
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.debug {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.solar-system {
+  font-size: 10px;
+  width: 50em;
+  height: 50em;
+  position: relative;
+}
+
+.planet {
+  position: absolute;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  /* border-color: white; */
+  border-width: 0.1em 0.1em 0 0;
+  border-radius: 50%;
+}
+
+.planet::before {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.sun {
+  position: absolute;
+  top: 20em;
+  left: 20em;
+  width: 10em;
+  height: 10em;
+  background-image: url("../public/img/sun-bg.svg");
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 3em white;
+}
+
+.earth {
+  top: 11em;
+  left: 11em;
+  width: 28em;
+  height: 28em;
+  animation: orbit 36.5s linear infinite;
+}
+
+.earth::before {
+  top: 2em;
+  right: 3em;
+  width: 3em;
+  height: 3em;
+  background-image: url("../public/img/earth-bg.svg");
+}
+
+.moon {
+  top: 0.3rem;
+  right: 1rem;
+  width: 6em;
+  height: 6em;
+  animation: orbit 5s linear infinite;
+}
+
+.moon::before {
+  top: 0.3em;
+  right: 0.2em;
+  width: 1.2em;
+  height: 1.2em;
+  background-image: url("../public/img/moon-bg.svg");
+}
+
+.mars {
+  top: 6em;
+  left: 5em;
+  width: 40em;
+  height: 40em;
+  animation: orbit 68.7s linear infinite;
+}
+
+.mars::before {
+  top: 4.6em;
+  right: 4em;
+  width: 3em;
+  height: 3em;
+  background-image: url("../public/img/mars-bg.svg");
+}
+
+.saturn {
+  top: -2em;
+  left: -3em;
+  width: 56em;
+  height: 56em;
+  animation: orbit 120s linear infinite;
+}
+
+.saturn::before {
+  top: 6em;
+  right: 5em;
+  width: 6em;
+  height: 6em;
+  background-image: url("../public/img/saturn-bg.svg");
+}
+
+.hero-section {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #001220;
+}
+
+.hero-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  font-family: a-space-italic;
+  color: white;
+}
+
+/* btn-rocket */
+.hero-section .content .btn-rocket {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  display: block;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: #f6e58d;
+  color: #000;
+  box-shadow: 0 10px #f9ca24;
+}
+
+.hero-section .content .btn-rocket span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.hero-section .content .btn-rocket span:before {
+  content: "";
+  background-image: url("../public/img/rocket-ship.svg");
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.1s ease 0s;
+}
+
+.hero-section .content .btn-rocket:hover span {
+  padding-left: 4rem;
+}
+
+.hero-section .content .btn-rocket:hover span:before {
+  left: 0;
+  opacity: 1;
+}
+
+.hero-section .content .btn-rocket:active {
+  box-shadow: 0 5px #f0932b;
+  transform: translateY(20px);
+}
+
+@media screen and (max-width: 1420px) {
+  .hero-section {
+    flex-direction: column;
+    height: 80rem;
+  }
+}

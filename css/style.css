@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+nav {
+  width: 100vw;
+  height: 5vh;
+  background-color: #fff;
+  /* position: fixed; */
+  top: 0;
+}
+
+.planets-details {
+  background-color: #fff;
+}
