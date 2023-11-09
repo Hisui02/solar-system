@@ -4,11 +4,11 @@
   --year-saturn: 10759;
 }
 
-@keyframes orbit {
+/* @keyframes orbit {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 body {
   margin: 0;
@@ -30,7 +30,8 @@ body {
 .planet {
   position: absolute;
   border-style: solid;
-  border-color: white transparent transparent transparent;
+  /* border-color: white transparent transparent transparent */
+  border-color: white;
   border-width: 0.1em 0.1em 0 0;
   border-radius: 50%;
 }
@@ -38,6 +39,8 @@ body {
 .planet::before {
   content: "";
   position: absolute;
+  background-position: center;
+  background-size: contain;
   border-radius: 50%;
 }
 
@@ -47,7 +50,13 @@ body {
   left: 15em;
   width: 10em;
   height: 10em;
-  background-color: yellow;
+  background: rgb(255, 223, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 223, 0, 1) 0%,
+    rgba(255, 159, 0, 1) 60%,
+    rgba(255, 64, 0, 1) 100%
+  );
   border-radius: 50%;
   box-shadow: 0 0 3em white;
 }
@@ -66,12 +75,12 @@ body {
   right: 2.8em;
   width: 3em;
   height: 3em;
-  background-color: aqua;
+  background-image: url("./earth-bg.svg");
 }
 
 .moon {
-  top: 0;
-  right: 0;
+  top: -0.5rem;
+  right: 0.5rem;
   width: 8em;
   height: 8em;
   animation: orbit 2.7s linear infinite;
@@ -100,7 +109,7 @@ body {
   right: 2.8em;
   width: 3em;
   height: 3em;
-  background-color: aqua;
+  background-image: url("./mars-bg.svg");
 }
 
 .saturn {
@@ -118,5 +127,5 @@ body {
   right: 2.8em;
   width: 6em;
   height: 6em;
-  background-color: aqua;
+  background-image: url("./saturn-bg.svg");
 }
