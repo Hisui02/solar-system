@@ -86,7 +86,7 @@
   left: 5em;
   width: 40em;
   height: 40em;
-  animation: orbit 68.7s linear infinite;
+  animation: orbit 5s linear infinite;
 }
 
 .mars::before {
@@ -102,7 +102,7 @@
   left: -3em;
   width: 56em;
   height: 56em;
-  animation: orbit 120s linear infinite;
+  animation: orbit 5s linear infinite;
 }
 
 .saturn::before {
@@ -114,8 +114,10 @@
 }
 
 .hero-section {
+  overflow: hidden;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -182,8 +184,23 @@
 }
 
 @media screen and (max-width: 1420px) {
+  .saturn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .hero-section {
     flex-direction: column;
-    height: 80rem;
+    text-align: center;
+  }
+  .hero-section .content {
+    font-size: 2.5rem;
+  }
+  .saturn {
+    display: none;
+  }
+  .mars {
+    display: none;
   }
 }
