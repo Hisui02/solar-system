@@ -86,7 +86,7 @@
   left: 5em;
   width: 40em;
   height: 40em;
-  animation: orbit 5s linear infinite;
+  animation: orbit 72s linear infinite;
 }
 
 .mars::before {
@@ -102,7 +102,7 @@
   left: -3em;
   width: 56em;
   height: 56em;
-  animation: orbit 5s linear infinite;
+  animation: orbit 120s linear infinite;
 }
 
 .saturn::before {
