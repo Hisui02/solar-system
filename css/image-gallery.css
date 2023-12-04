@@ -164,69 +164,7 @@ body {
   color: #fff;
   min-height: 470px;
 }
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  .like-wrapper {
-  background: #1690e5;
-  border-radius: 15px;
-  width: auto;
-  padding: 6px 10px 7px 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  font-size: 12px;
-}
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  .like-wrapper
-  .heart {
-  display: inline-block;
-  font-size: 16px;
-}
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  .like-wrapper
-  .heart:hover {
-  transform: rotate(360deg);
-  transition: all 0.3s ease-in-out 0s;
-}
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  .like-wrapper
-  .liked {
-  color: red;
-}
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  .like-wrapper
-  #quote-likes {
-  display: inline-block;
-  padding-left: 7px;
-}
-.page-wrapper
-  .inner-background
-  .quote-container
-  .quote-details-wrapper
-  #quote-header
-  :hover {
-  background: #1a80c8;
-}
+
 .page-wrapper
   .inner-background
   .quote-container
