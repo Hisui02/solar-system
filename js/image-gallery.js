@@ -11,122 +11,52 @@
   // data for the quote browser. Would ideally come from an api, but I wanted control over my images
   var data = [
     {
-      author: "Hodor",
-      quote: "Hold the door.",
+      author: "Neil Armstrong",
+      quote: "That's one small step for a man, one giant leap for mankind.",
       image:
-        "http://vignette3.wikia.nocookie.net/gameofthrones/images/1/18/Season_6_hodor_main.jpg/revision/latest?cb=20160617020835",
-      likes: "1032",
-      has_liked: 0,
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/800px-Mercury_in_color_-_Prockter07_centered.jpg",
     },
     {
-      author: "Abraham Lincoln",
-      quote: "No man has a good enough memory to be a successful liar.",
-      image: "https://media1.britannica.com/eb-media/34/78134-004-8587374E.jpg",
-      likes: "422",
-      has_liked: 0,
+      author: "Joseph Joubert",
+      quote: "Space is to place as eternity is to time.",
+      image:
+        "https://th.bing.com/th/id/OIP.-SWpPyrGW3DrXoJyaAswwAHaFj?rs=1&pid=ImgDetMain",
     },
     {
-      author: "Tyrion Lannister",
-      quote:
-        "Once youâ€™ve accepted your flaws, no one can use them against you.",
+      author: "Neil deGrasse Tyson",
+      quote: "The Universe is under no obligation to make sense to you.",
       image:
-        "https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg",
-      likes: "2042",
-      has_liked: 0,
+        "https://cofredpalabras.files.wordpress.com/2015/04/el-planeta-tierra.jpg",
     },
     {
       author: "Elon Musk",
-      quote: "Dichotomy between sense of wonder and what is wrong.",
+      quote: "I would like to die on Mars. Just not on impact.",
       image:
-        "http://esq.h-cdn.co/assets/cm/15/11/550344283c14e_-_esq-elon-musk-1212-de.jpg",
-      likes: "315",
-      has_liked: 0,
+        "https://services.meteored.com/img/article/marte-en-oposicion-en-el-perihelio-a-disfrutar-284601-1_1024.jpg",
     },
     {
-      author: "Victor Hugo",
-      quote:
-        "When a woman is talking to you, listen to what she says with her eyes.",
+      author: "Peter Diamandis",
+      quote: "Space is an inspirational concept that allows you to dream big.",
       image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb0VH1V4SYsuo_LOiznZZbMqKP5AKG1yT0b4Y5kIQIQ1eUKQrp",
-      likes: "432",
-      has_liked: 0,
+        "https://th.bing.com/th/id/R.fef74e45ec48e66de117322f8d27b02b?rik=%2b8JwXfAhBoAmCA&riu=http%3a%2f%2f4.bp.blogspot.com%2f--EVDpB2lSnY%2fUzXhTP3v4DI%2fAAAAAAAAE3c%2fqWKPpuXoIRg%2fs3200%2fJupiter%2bplanet.jpg&ehk=mms%2fqtmJGgrSvuqAAAhle46wRVltSNHuh9s3zdYEWc4%3d&risl=&pid=ImgRaw&r=0",
     },
     {
-      author: "Elon Musk",
-      quote: "There's skepticism about anything new. That's normal.",
+      author: "Valentina Tereshkova",
+      quote: "Hey sky, take off your hat, I'm on my way!",
       image:
-        "http://esq.h-cdn.co/assets/cm/15/11/550344283c14e_-_esq-elon-musk-1212-de.jpg",
-      likes: "175",
-      has_liked: 0,
+        "https://mi.astrocentro.com/vss/astrocenter/pictures/29642756-adobestock-250121615.jpeg",
     },
     {
-      author: "Ralph Waldo Emerson",
-      quote: "Nothing great was ever achieved without enthusiasm.",
+      author: "Jim Lovell",
+      quote: "Houston, we've had a problem.",
       image:
-        "https://s-media-cache-ak0.pinimg.com/236x/a2/f3/91/a2f391f3943a5626a3f4641755c4a9e8.jpg",
-      likes: "121",
-      has_liked: 0,
+        "https://www.greenme.it/wp-content/uploads/2020/11/planeta-urano.jpg",
     },
     {
-      author: "Victor Hugo",
-      quote: "Initiative is doing the right thing without being told.",
+      author: "Alan Shepard",
+      quote: "They say any landing you can walk away from is a good one.",
       image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb0VH1V4SYsuo_LOiznZZbMqKP5AKG1yT0b4Y5kIQIQ1eUKQrp",
-      likes: "43",
-      has_liked: 0,
-    },
-    {
-      author: "Seth Godin",
-      quote: "Defenseless is the best choice for those seeking to grow.",
-      image:
-        "http://www.therisetothetop.com/wp-content/uploads/2011/11/SethGodin.jpg",
-      likes: "222",
-      has_liked: 0,
-    },
-    {
-      author: "Victor Hugo",
-      quote: "There is nothing more powerful than an idea whose time has come.",
-      image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb0VH1V4SYsuo_LOiznZZbMqKP5AKG1yT0b4Y5kIQIQ1eUKQrp",
-      likes: "111",
-      has_liked: 0,
-    },
-    {
-      author: "Seth Godin",
-      quote: "Ship often. Ship lousy stuff, but ship. Ship constantly.",
-      image:
-        "http://www.therisetothetop.com/wp-content/uploads/2011/11/SethGodin.jpg",
-      likes: "111",
-      has_liked: 0,
-    },
-    {
-      author: "Oscar Wilde",
-      quote: "Experience is simply the name we give our mistakes.",
-      image: "http://www.wilde-online.info/images/oscar-wilde-p1.jpg",
-      likes: "22",
-      has_liked: 0,
-    },
-    {
-      author: "Oscar Wilde",
-      quote: "Work is the curse of the drinking classes.",
-      image: "http://www.wilde-online.info/images/oscar-wilde-p1.jpg",
-      likes: "67",
-      has_liked: 0,
-    },
-    {
-      author: "Victor Hugo",
-      quote: "He who opens a school door, closes a prison.",
-      image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb0VH1V4SYsuo_LOiznZZbMqKP5AKG1yT0b4Y5kIQIQ1eUKQrp",
-      likes: "335",
-      has_liked: 0,
-    },
-    {
-      author: "Alan Watts",
-      quote: "A person who never made a mistake never tried anything new.",
-      image: "https://probaway.files.wordpress.com/2013/06/watts_alan_2.jpg",
-      likes: "344",
-      has_liked: 0,
+        "https://external-preview.redd.it/5CzriqTNA97BuyiyByn0ZgjZcYVg8MzVmswrjBXXfyM.jpg?auto=webp&s=e6ea8e4ddeb99e49b1cde92ca8fe7667d7fe774d",
     },
   ];
 
@@ -134,7 +64,6 @@
     imgDomElement: "quote-image",
     quoteDomElement: "quote-body",
     authorDomElement: "quote-author",
-    likeDomElement: "quote-likes",
   };
 
   var quoteBrowser = function (data, elements) {
@@ -191,7 +120,6 @@
   quoteBrowser.prototype.init = function () {
     var prevArrow = document.getElementById("move-left");
     var nextArrow = document.getElementById("move-right");
-    var likeButton = document.getElementsByClassName("like-wrapper")[0];
 
     // cannot use 'this' inside onclick handlers since they have a different context
     var browser = this;
@@ -212,14 +140,6 @@
         },
         false
       );
-
-      likeButton.addEventListener(
-        "click",
-        function () {
-          browser.incrementCurrentQuoteLikes();
-        },
-        false
-      );
     } else if (prevArrow.attachEvent) {
       prevArrow.attachEvent("onclick", function () {
         browser.scrollQuote("prev");
@@ -227,10 +147,6 @@
 
       nextArrow.attachEvent("onclick", function () {
         browser.scrollQuote("next");
-      });
-
-      likeButton.attachEvent("onclick", function () {
-        browser.incrementCurrentQuoteLikes();
       });
     }
   };
@@ -244,21 +160,12 @@
   };
 
   // setQuote sets the data for this quote
-  quoteBrowser.prototype.setQuote = function (quoteObj) {
+  quoteBrowser.prototype.setQuote = async function (quoteObj) {
     // set each of the dom elements to the data
     // use stored elements for each part of quote instead of looking them up each time
     this.bindedElements.img.src = quoteObj.image;
-    this.bindedElements.quote.innerHTML = quoteObj.quote;
+    this.bindedElements.quote.innerHTML = '"' + quoteObj.quote + '"';
     this.bindedElements.author.innerHTML = quoteObj.author;
-    this.bindedElements.likes.innerHTML = quoteObj.likes;
-
-    var heartDiv = document.getElementsByClassName("heart")[0];
-
-    // start by removing the liked for this quote
-    heartDiv.classList.remove("liked");
-
-    // color the heart if they have already liked
-    if (quoteObj.has_liked) heartDiv.classList.add("liked");
   };
 
   document.addEventListener(
