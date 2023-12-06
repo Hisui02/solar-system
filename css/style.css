@@ -3,20 +3,53 @@
   background: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #001220;
+  color: white;
 }
 
 nav {
+  z-index: 50;
   width: 100vw;
-  height: 5vh;
-  background-color: #fff;
+  height: 8vh;
   position: fixed;
-  top: 0;
+  top: 0.5em;
 }
 
-.planets-details {
-  background-color: #fff;
+nav div {
+  background-color: #33414d;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+nav a {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+}
+
+nav a span {
+  color: #fff;
+  font-family: a-space-italic;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #011220;
+}
+
+nav a:hover span {
+  transform: translateY(-5px);
 }

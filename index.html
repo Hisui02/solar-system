@@ -6,11 +6,26 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hero-section.css" />
+    <link rel="stylesheet" href="./css/image-gallery.css" />
+
+    <script
+      src="https://kit.fontawesome.com/128d1174e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/image-gallery.js"></script>
     <title>Solar System - Hisui</title>
   </head>
   <body>
-    <nav>Barra de navegación</nav>
-    <section class="hero-section">
+    <nav>
+      <div>
+        <a href="#start"><span>Inicio</span></a>
+        <a href="#planets"><span>Planetas</span></a>
+        <a href="#images"><span>Imágenes</span></a>
+        <a href="#history"><span>Historia</span></a>
+        <a href="#ubication"><span>Ubicación</span></a>
+      </div>
+    </nav>
+    <section id="start" class="hero-section">
       <div class="content">
         <h1>El sistema <br />solar</h1>
         <button href="#" class="btn-rocket"><span>Comenzar</span></button>
@@ -25,10 +40,41 @@
       </div>
     </section>
     <div id="wrapper">
-      <section class="planets-details">Detalles de cada planeta</section>
-      <section>Galería de imágenes</section>
-      <section>La historia del sistema solar</section>
-      <section>Nuestra ubicación en el universo</section>
+      <section id="planets" class="planets-details">
+        Detalles de cada planeta
+      </section>
+      <section id="images" class="page-wrapper">
+        <div class="inner-background">
+          <div class="quote-container">
+            <div class="quote-photo-wrapper">
+              <img
+                id="quote-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Abraham_Lincoln_November_1863.jpg"
+                alt="image"
+              />
+              <div class="nav-btns">
+                <div id="move-left">
+                  <span><i class="fa fa-angle-left"></i></span>
+                </div>
+                <div id="move-right">
+                  <span><i class="fa fa-angle-right"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="quote-details-wrapper">
+              <div id="quote-body">
+                Things may come to those who wait, but only the things left by
+                those who hustle.
+              </div>
+              <div id="quote-footer">
+                - <span id="quote-author">Abraham Lincoln</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="history">La historia del sistema solar</section>
+      <section id="ubication">Nuestra ubicación en el universo</section>
     </div>
     <footer>Footer</footer>
   </body>
