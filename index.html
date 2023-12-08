@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/128d1174e1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/menu-hamburguesa.js"></script>
     <script src="./js/image-gallery.js"></script>
     <title>Solar System - Hisui</title>
   </head>
@@ -25,6 +26,11 @@
         <a href="#ubication"><span>Ubicación</span></a>
       </div>
     </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
     <section id="start" class="hero-section">
       <div class="content">
         <h1>El sistema <br />solar</h1>
@@ -41,7 +47,86 @@
     </section>
     <div id="wrapper">
       <section id="planets" class="planets-details">
-        Detalles de cada planeta
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/800px-Mercury_in_color_-_Prockter07_centered.jpg"
+            alt="Planeta 2"
+          />
+          <div class="card-content">
+            <h2>Mercurio</h2>
+            <p>Información sobre Mercurio.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/OIP.-SWpPyrGW3DrXoJyaAswwAHaFj?rs=1&pid=ImgDetMain"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Venus</h2>
+            <p>Información sobre Venus.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cofredpalabras.files.wordpress.com/2015/04/el-planeta-tierra.jpg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Tierra</h2>
+            <p>Información sobre la Tierra.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://services.meteored.com/img/article/marte-en-oposicion-en-el-perihelio-a-disfrutar-284601-1_1024.jpg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Marte</h2>
+            <p>Información sobre Marte.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/R.fef74e45ec48e66de117322f8d27b02b?rik=%2b8JwXfAhBoAmCA&riu=http%3a%2f%2f4.bp.blogspot.com%2f--EVDpB2lSnY%2fUzXhTP3v4DI%2fAAAAAAAAE3c%2fqWKPpuXoIRg%2fs3200%2fJupiter%2bplanet.jpg&ehk=mms%2fqtmJGgrSvuqAAAhle46wRVltSNHuh9s3zdYEWc4%3d&risl=&pid=ImgRaw&r=0"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Jupiter</h2>
+            <p>Información sobre Jupiter.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://mi.astrocentro.com/vss/astrocenter/pictures/29642756-adobestock-250121615.jpeg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Saturno</h2>
+            <p>Información sobre Saturno.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+          src=https://www.greenme.it/wp-content/uploads/2020/11/planeta-urano.jpg
+          alt="Planeta 1" />
+          <div class="card-content">
+            <h2>Urano</h2>
+            <p>Información sobre Urano.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://external-preview.redd.it/5CzriqTNA97BuyiyByn0ZgjZcYVg8MzVmswrjBXXfyM.jpg?auto=webp&s=e6ea8e4ddeb99e49b1cde92ca8fe7667d7fe774d"
+            ,
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Neptuno</h2>
+            <p>Información sobre Neptuno.</p>
+          </div>
+        </div>
       </section>
       <section id="images" class="page-wrapper">
         <div class="inner-background">
@@ -76,6 +161,28 @@
       <section id="history">La historia del sistema solar</section>
       <section id="ubication">Nuestra ubicación en el universo</section>
     </div>
-    <footer>Footer</footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-item vertical">
+          <a href="#start"><span>Inicio</span></a>
+          <a href="#planets"><span>Planetas</span></a>
+          <a href="#images"><span>Imágenes</span></a>
+          <a href="#history"><span>Historia</span></a>
+          <a href="#ubication"><span>Ubicación</span></a>
+        </div>
+        <div class="footer-item">
+          <p>Álvaro</p>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-item vertical text-l">
+          <span>Solar-System</span>
+          <span>Lenguaje de Marcas</span>
+          <span>2023</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
