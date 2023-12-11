@@ -1,3 +1,8 @@
+@font-face {
+  font-family: a-space-italic;
+  src: url(../public/fonts/a-space.italic.otf);
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
@@ -13,6 +18,8 @@ body {
   background-color: #001220;
   color: white;
 }
+
+/* Menu y navbar */
 
 nav {
   z-index: 50;
@@ -53,6 +60,21 @@ nav a:hover {
 nav a:hover span {
   transform: translateY(-5px);
 }
+
+.menu-toggle {
+  display: none;
+  margin: 1rem 0 0 1rem;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+/* Fin de menu y navbar */
+
+/* Footer */
 
 .footer {
   background-color: #333;
@@ -103,21 +125,13 @@ nav a:hover span {
   text-decoration: underline;
 }
 
+/* Fin de footer */
+
 .text-l {
   font-size: larger;
 }
 
-.menu-toggle {
-  display: none;
-  margin: 1rem 0 0 1rem;
-}
-
-.menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
+/*Detalles de los planetas*/
 
 .planets-details {
   display: grid;
@@ -143,12 +157,128 @@ nav a:hover span {
   padding: 15px;
 }
 
+.card-content h2 {
+  margin-bottom: 1rem;
+}
+
+/* Fin de detalles de los planetas */
+
+/* Estilos del acordeón */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#history h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-family: a-space-italic;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/* Fin de acordeón */
+
+/* Sección de ubicación */
+#ubication h2 {
+  text-align: center;
+  font-family: a-space-italic;
+  font-size: 2.5rem;
+}
+
+#ubication .flex {
+  padding: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+
+#ubication div {
+  align-items: center;
+  text-align: center;
+}
+
+#ubication .texto-ubicacion {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#ubication .texto-ubicacion a {
+  text-decoration: none;
+  color: black;
+}
+
+#ubication .texto-ubicacion a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Fin de ubicación */
 @media screen and (max-width: 768px) {
   .menu-toggle {
+    background-color: transparent;
+    border: 0;
+    z-index: 99999;
     display: block;
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: 0.1rem;
+    left: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25%;
+  }
+
+  .menu-toggle.active {
+    background-color: rgba(198, 197, 197, 0.5);
+  }
+
+  .menu-toggle:hover {
+    background-color: rgba(198, 197, 197, 0.5);
   }
 
   nav.active div {
@@ -170,5 +300,9 @@ nav a:hover span {
   nav a {
     display: block;
     text-align: center;
+  }
+
+  #ubication .flex {
+    flex-direction: column;
   }
 }
