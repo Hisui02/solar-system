@@ -1,3 +1,8 @@
+/*
+Inspiración tomada desde el siguiente vídeo de Youtube
+https://www.youtube.com/watch?v=20R6lVROuNk
+*/
+
 @font-face {
   font-family: a-space-italic;
   src: url(../public/fonts/a-space.italic.otf);
@@ -7,10 +12,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.debug {
-  background-color: rgb(255, 255, 255, 0.3);
 }
 
 .solar-system {
@@ -135,10 +136,9 @@
 
 /* btn-rocket */
 .hero-section .content .btn-rocket {
-  padding: 15px;
+  margin-top: 4rem;
   font-weight: 700;
   font-size: 2rem;
-  text-decoration: none;
   text-align: center;
   outline: none;
   text-decoration: none;

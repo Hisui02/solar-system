@@ -94,8 +94,8 @@ nav a:hover span {
   text-align: center;
 }
 
-.footer-item a {
-  margin: 0 0.5rem;
+.footer-item p {
+  margin-bottom: 1rem;
 }
 
 .social-icon {
@@ -106,7 +106,7 @@ nav a:hover span {
 }
 
 .social-icon:hover {
-  color: #007bff; /* Cambiar color al pasar el ratón */
+  color: #007bff;
 }
 
 .footer-item.vertical {
@@ -235,6 +235,10 @@ nav a:hover span {
   padding: 3rem;
   display: flex;
   gap: 3rem;
+}
+
+#ubication .flex img {
+  width: 100%;
 }
 
 #ubication div {
