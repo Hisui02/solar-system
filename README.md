@@ -54,14 +54,21 @@ Sobre ella he colocado un Call to Action que añade una animación de hover<br><
 
 <h2 id="estilo">Estilo de la página</h2>
 <h3>Paleta de colores</h3>
-<p>.....</p>
+<p>#001220</p>
+<p>#f6e58d</p>
+<p>#ffffff</p>
+<p>#179ffe</p>
+<p>#333333</p>
 <h3>Tipografías</h3>
-<p>.....</p>
+<p>a-space-italic</p>
+<p>Times New Roman</p>
+<p>Archivo Black</p>
+<p>Free</p>
+<p>Brands</p>
 <h3>Imágenes</h3>
-<p>.....</p>
-<h3>Videos</h3>
-<p>.....</p>
-...................
+<p>Diversos SVG generados a partir de haikei.app para los fondos de los planetas de la animación en la hero section</p>
+<p>Imágenes de los 9 planetas del Sistema Solar</p>
+
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado los siguientes:</p>
 <ul>

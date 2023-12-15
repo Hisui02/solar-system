@@ -177,7 +177,7 @@ nav a:hover span {
   box-sizing: border-box;
 }
 
-#history h1 {
+#info h1 {
   text-align: center;
   margin: 2rem 0;
   font-size: 2.5rem;
@@ -230,40 +230,42 @@ nav a:hover span {
 /* Fin de acordeón */
 
 /* Sección de ubicación */
-#ubication h2 {
+#location h2 {
   text-align: center;
   font-family: a-space-italic;
   font-size: 2.5rem;
 }
 
-#ubication .flex {
+#location .flex {
   padding: 3rem;
   display: flex;
   gap: 3rem;
 }
 
-#ubication .flex img {
+#location .flex img {
   width: 100%;
+  height: 40vh;
+  object-fit: cover;
 }
 
-#ubication div {
+#location div {
   align-items: center;
   text-align: center;
 }
 
-#ubication .texto-ubicacion {
+#location .texto-ubicacion {
   background-color: white;
   color: black;
   padding: 2rem;
   border-radius: 1rem;
 }
 
-#ubication .texto-ubicacion a {
+#location .texto-ubicacion a {
   text-decoration: none;
   color: black;
 }
 
-#ubication .texto-ubicacion a:hover {
+#location .texto-ubicacion a:hover {
   text-decoration: underline;
   font-weight: bolder;
 }
@@ -280,6 +282,10 @@ nav a:hover span {
     left: 0.1rem;
     padding: 0.5rem 1rem;
     border-radius: 25%;
+  }
+
+  #location .flex img {
+    height: 20vh;
   }
 
   .menu-toggle.active {
@@ -311,7 +317,7 @@ nav a:hover span {
     text-align: center;
   }
 
-  #ubication .flex {
+  #location .flex {
     flex-direction: column;
   }
 }
