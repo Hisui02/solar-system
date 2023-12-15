@@ -3,6 +3,11 @@
   background: transparent;
 }
 
+#wrapper {
+  width: 80vw;
+  margin: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,4 +24,10 @@ nav {
 
 .planets-details {
   background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    width: 100vw;
+  }
 }
