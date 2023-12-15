@@ -6,14 +6,38 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hero-section.css" />
+    <link rel="stylesheet" href="./css/image-gallery.css" />
+
+    <script
+      src="https://kit.fontawesome.com/128d1174e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu-hamburguesa.js"></script>
+    <script src="./js/image-gallery.js"></script>
+    <script src="./js/accordion.js"></script>
     <title>Solar System - Hisui</title>
   </head>
   <body>
-    <nav>Barra de navegación</nav>
-    <section class="hero-section">
+    <nav>
+      <div>
+        <a href="#start"><span>Inicio</span></a>
+        <a href="#planets"><span>Planetas</span></a>
+        <a href="#images"><span>Imágenes</span></a>
+        <a href="#history"><span>Historia</span></a>
+        <a href="#ubication"><span>Ubicación</span></a>
+      </div>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <section id="start" class="hero-section">
       <div class="content">
         <h1>El sistema <br />solar</h1>
-        <button href="#" class="btn-rocket"><span>Comenzar</span></button>
+        <a href="#planets" class="btn-rocket">
+          <span>Comenzar</span>
+        </a>
       </div>
       <div class="solar-system">
         <div class="sun"></div>
@@ -25,11 +49,241 @@
       </div>
     </section>
     <div id="wrapper">
-      <section class="planets-details">Detalles de cada planeta</section>
-      <section>Galería de imágenes</section>
-      <section>La historia del sistema solar</section>
-      <section>Nuestra ubicación en el universo</section>
+      <section id="planets" class="planets-details">
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/800px-Mercury_in_color_-_Prockter07_centered.jpg"
+            alt="Planeta 2"
+          />
+          <div class="card-content">
+            <h2>Mercurio</h2>
+            <p>
+              Es el planeta más cercano al Sol y el más pequeño del sistema
+              solar. Tiene una superficie rocosa y desértica, sin atmósfera y
+              con temperaturas extremas que oscilan entre los -173°C y los
+              427°C.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/OIP.-SWpPyrGW3DrXoJyaAswwAHaFj?rs=1&pid=ImgDetMain"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Venus</h2>
+            <p>
+              Conocido como el planeta gemelo de la Tierra debido a su tamaño y
+              composición similares. Tiene una atmósfera densa y tóxica
+              compuesta principalmente de dióxido de carbono, con temperaturas
+              que pueden alcanzar los 471°C.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cofredpalabras.files.wordpress.com/2015/04/el-planeta-tierra.jpg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Tierra</h2>
+            <p>
+              El único conocido por albergar vida. Tiene una atmósfera rica en
+              oxígeno y nitrógeno, y una temperatura media de 15°C.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://services.meteored.com/img/article/marte-en-oposicion-en-el-perihelio-a-disfrutar-284601-1_1024.jpg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Marte</h2>
+            <p>
+              Conocido como el planeta rojo debido a su coloración. Tiene una
+              atmósfera delgada compuesta principalmente de dióxido de carbono,
+              con temperaturas que oscilan entre los -143°C y los 35°C.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/R.fef74e45ec48e66de117322f8d27b02b?rik=%2b8JwXfAhBoAmCA&riu=http%3a%2f%2f4.bp.blogspot.com%2f--EVDpB2lSnY%2fUzXhTP3v4DI%2fAAAAAAAAE3c%2fqWKPpuXoIRg%2fs3200%2fJupiter%2bplanet.jpg&ehk=mms%2fqtmJGgrSvuqAAAhle46wRVltSNHuh9s3zdYEWc4%3d&risl=&pid=ImgRaw&r=0"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Jupiter</h2>
+            <p>
+              Es el más grande de todos. Es un gigante gaseoso con una atmósfera
+              compuesta principalmente de hidrógeno y helio, y tiene una serie
+              de lunas y anillos.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://mi.astrocentro.com/vss/astrocenter/pictures/29642756-adobestock-250121615.jpeg"
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Saturno</h2>
+            <p>
+              Conocido por sus espectaculares anillos. Es un gigante gaseoso con
+              una atmósfera compuesta principalmente de hidrógeno y helio, y
+              tiene una serie de lunas.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+          src=https://www.greenme.it/wp-content/uploads/2020/11/planeta-urano.jpg
+          alt="Planeta 1" />
+          <div class="card-content">
+            <h2>Urano</h2>
+            <p>
+              Conocido por su inclinación axial extrema. Es un gigante de hielo
+              con una atmósfera compuesta principalmente de hidrógeno, helio y
+              metano, y tiene una serie de lunas y anillos.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://external-preview.redd.it/5CzriqTNA97BuyiyByn0ZgjZcYVg8MzVmswrjBXXfyM.jpg?auto=webp&s=e6ea8e4ddeb99e49b1cde92ca8fe7667d7fe774d"
+            ,
+            alt="Planeta 1"
+          />
+          <div class="card-content">
+            <h2>Neptuno</h2>
+            <p>
+              Conocido por su coloración azulada. Es un gigante de hielo con una
+              atmósfera compuesta principalmente de hidrógeno, helio y metano, y
+              tiene una serie de lunas y anillos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="images" class="page-wrapper">
+        <div class="inner-background">
+          <div class="quote-container">
+            <div class="quote-photo-wrapper">
+              <img
+                id="quote-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Abraham_Lincoln_November_1863.jpg"
+                alt="image"
+              />
+              <div class="nav-btns">
+                <div id="move-left">
+                  <span><i class="fa fa-angle-left"></i></span>
+                </div>
+                <div id="move-right">
+                  <span><i class="fa fa-angle-right"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="quote-details-wrapper">
+              <div id="quote-body">
+                Things may come to those who wait, but only the things left by
+                those who hustle.
+              </div>
+              <div id="quote-footer">
+                - <span id="quote-author">Abraham Lincoln</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="history">
+        <h1>Un poco de historia</h1>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">¿Qué es el sistema solar?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Es un sistema planetario formado por una estrella (el Sol) y los
+                cuerpos celestes que giran a su alrededor, como planetas, lunas,
+                asteroides y cometas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              ¿Cómo se formó el sistema solar?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Se cree que se originó a partir de una nube de gas molecular que
+                colapsó por la gravedad o por la explosión de una supernova
+                cercana, dando lugar a una protoestrella y un disco de material
+                que se convirtió en los planetas y otros objetos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              ¿Qué partes conforman el sistema solar?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                El sistema solar se compone del Sol, ocho planetas (cuatro
+                rocosos y cuatro gigantes gaseosos), cinco planetas enanos, dos
+                cinturones de asteroides (el de asteroides y el de Kuiper), una
+                nube de cometas (la nube de Oort) y el espacio interplanetario.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ubication">
+        <h2>¿Dónde estamos?</h2>
+        <div class="flex">
+          <img
+            src="./public/img/sistema-solar-via-lactea-1.jpg"
+            alt="Via Láctea"
+          />
+          <div class="texto-ubicacion">
+            El sistema solar se ubica en el brazo de Orión o Local, uno de los
+            brazos espirales de la galaxia Vía Láctea, a unos 28.000 años luz
+            del centro galáctico. El sistema solar más cercano al nuestro es
+            <a href="https://es.wikipedia.org/wiki/Alfa_Centauri"
+              >Alfa Centauri</a
+            >, a 4,4 años luz de distancia.
+          </div>
+        </div>
+      </section>
     </div>
-    <footer>Footer</footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-item vertical">
+          <a href="#start"><span>Inicio</span></a>
+          <a href="#planets"><span>Planetas</span></a>
+          <a href="#images"><span>Imágenes</span></a>
+          <a href="#history"><span>Historia</span></a>
+          <a href="#ubication"><span>Ubicación</span></a>
+        </div>
+        <div class="footer-item">
+          <p>Álvaro</p>
+          <a title="Facebook" href="#" class="social-icon"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a title="Instagram" href="#" class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a title="X" href="#" class="social-icon"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a title="LinkedIn" href="#" class="social-icon"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="footer-item vertical text-l">
+          <span>Solar-System</span>
+          <span>Lenguaje de Marcas</span>
+          <span>2023</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
