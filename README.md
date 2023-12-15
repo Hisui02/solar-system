@@ -73,5 +73,6 @@ Sobre ella he colocado un Call to Action que añade una animación de hover<br><
 <p>He utilizado los siguientes:</p>
 <ul>
   <li>Fondo de la Hero Section: https://www.youtube.com/watch?v=20R6lVROuNk&t=3s</li>
+  <li>Eliminada barra de scroll: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp</li>
   <li>Slideshow de imágenes: https://www.codehim.com/carousel/javascript-quotes-slideshow-with-images/</li>
 </ul>
